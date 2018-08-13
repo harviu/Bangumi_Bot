@@ -3,12 +3,6 @@
 
 Description=Bangumi Bot
 
-Wants=network.target
-
-Before=network.target network.service
-
-                                                                                                                                                                               
-
 [Service]
 
 Type=simple

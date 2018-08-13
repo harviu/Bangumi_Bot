@@ -17,6 +17,9 @@ const getTopBangumi = (dosth,date) => {
                 console.log(error);
             }
         });
+    }else{
+        console.log("Season on going...");
+        
     }
 };
 
