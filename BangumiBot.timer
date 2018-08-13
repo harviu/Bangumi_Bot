@@ -1,0 +1,9 @@
+[Unit]
+Description=Bangumi Bot runs every season
+
+[Timer]
+OnCalendar=*-*-1 00:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
