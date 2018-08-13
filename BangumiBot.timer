@@ -2,7 +2,7 @@
 Description=Bangumi Bot runs every season
 
 [Timer]
-OnCalendar=*-*-1 00:00:00
+OnCalendar=*-1 4 7 10-1 00:00:00
 Persistent=true
 
 [Install]

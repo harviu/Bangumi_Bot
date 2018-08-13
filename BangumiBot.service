@@ -1,0 +1,16 @@
+
+[Unit]
+
+Description=Bangumi Bot
+
+Wants=network.target
+
+Before=network.target network.service
+
+                                                                                                                                                                               
+
+[Service]
+
+Type=simple
+
+ExecStart=node /home/harvey/Bangumi_Bot/index.js
