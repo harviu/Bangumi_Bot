@@ -1,8 +1,6 @@
-
 [Unit]
 
 Description=Bangumi Bot
-
+After = network.target
 [Service]
-
-ExecStart=node /home/harvey/Bangumi_Bot/index.js
+ExecStart=/home/harvey/.nvm/versions/node/v8.11.3/bin/node /home/harvey/Bangumi_Bot/index.js
