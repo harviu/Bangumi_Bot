@@ -5,13 +5,13 @@ const getTopBangumi = (dosth,date) => {
     else 
         d = date;
     if(d.getDate()==1&&(d.getMonth()==1||d.getMonth()==4||d.getMonth()==7||d.getMonth()==10)){
-        console.log("New Season...Fetching List...\n")
+        console.log("New Season...Fetching List...")
         year = d.getFullYear();
-        month = d.getMonth();
+        month = (d.getMonth()+9)%12;
         questString = "http://bangumi.tv/anime/browser/tv/airtime/"+year+"-"+month+"?sort=rank";
         request(questString, function(error,response,body){
             if(!error&&response.statusCode==200){
-                console.log("Feching Success.");
+                console.log("Fetching Success.");
                 dosth(month,body,3);
             }else{
                 console.log(error);

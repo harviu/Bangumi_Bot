@@ -7,13 +7,13 @@ var generateText = function(m,content,index){
     var itemList = list.map(x=>x.substring(0,6));
     var nameList = list.map(x=>x.substring(18,x.length-4));
     if(m ==1){
-      season = '秋';  
+      season = '冬';  
     }else if(m==4){
-        season = '冬'
+        season = '春'
     }else if (m == 7){
-        season = '春';
-    }else if (m == 10){
         season = '夏';
+    }else if (m == 10){
+        season = '秋';
     }
     var s1 = season+"季番结束了呢，给姐姐大人们送上上一季度的补番推荐：\n";
     var s2 = [];
