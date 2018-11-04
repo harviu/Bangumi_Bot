@@ -44,3 +44,6 @@ jspm_packages
 
 # production
 /build
+
+# VSCode config
+.vscode
